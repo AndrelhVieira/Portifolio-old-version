@@ -30,6 +30,24 @@ body {
   background: #555;
 }
 
+@keyframes changeColor {
+  0% {
+    color: #d4d4d4;
+  }
+  25% {
+    color: #3a3335;
+  }
+  50% {
+    color: #d4d4d4;
+  }
+  75% {
+    color: #3a3335;
+  }
+  100% {
+    color: #d4d4d4;
+  }
+}
+
 .goToTop {
   border: none;
   background-color: transparent;
@@ -41,6 +59,9 @@ body {
   height: 3rem;
   outline: none;
   cursor: pointer;
+  animation-name: changeColor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes arrowFlow {
@@ -60,4 +81,8 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   position: relative;
+}
+
+button {
+  outline: none;
 }

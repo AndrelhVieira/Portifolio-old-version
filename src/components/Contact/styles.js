@@ -38,3 +38,38 @@ export const IconsDiv = styled.div`
     }
   }
 `;
+
+export const CurriculumDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 525px) {
+    font-size: 4rem;
+  }
+`;
+
+export const Email = styled.h3`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem !important;
+  margin: 25px auto !important;
+
+  @media screen and (min-width: 396px) {
+    font-size: 1.5rem !important;
+  }
+
+  & i {
+    display: none;
+    font-size: 2rem;
+    margin-right: 5px;
+
+    @media screen and (min-width: 396px) {
+      display: block;
+    }
+  }
+`;

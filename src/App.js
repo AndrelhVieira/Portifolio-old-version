@@ -1,9 +1,9 @@
-import Homepage from "./pages/Homepage";
+import Routes from "./routes";
 
 import "./global.css";
 
 const App = () => {
-  return <Homepage />;
+  return <Routes />;
 };
 
 export default App;

@@ -12,7 +12,7 @@ const tecno = [
     icon: <i class="devicon-javascript-plain"></i>,
   },
   {
-    name: `React Js/Native`,
+    name: `React Js`,
     icon: <i class="devicon-react-original"></i>,
   },
   {
@@ -30,10 +30,6 @@ const tecno = [
   {
     name: "GIT",
     icon: <i class="devicon-git-plain"></i>,
-  },
-  {
-    name: "Typescript",
-    icon: <i class="devicon-typescript-plain"></i>,
   },
 ];
 
