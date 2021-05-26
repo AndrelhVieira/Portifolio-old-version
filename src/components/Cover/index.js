@@ -8,7 +8,7 @@ const Cover = () => {
       <StyledCover>
         <img src={alv} />
         <h1>André Luiz Vieira</h1>
-        <h3>Desenvolvedor Júnior</h3>
+        <h3>Desenvolvedor Full-stack</h3>
 
         <a href="#sobre" id="arrow">
           <i class="fas fa-angle-double-down"></i>
