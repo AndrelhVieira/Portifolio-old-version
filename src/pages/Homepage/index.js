@@ -6,27 +6,39 @@ import Portfolio from "../../components/Portfolio";
 import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 
+import { useState, useEffect } from "react";
+import BeatLoader from "react-spinners/BeatLoader";
+
 import { Container } from "./styles";
 
-import { useEffect } from "react";
-
 const Homepage = () => {
-  const scroll = document.body.scrollTop;
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    console.log(scroll);
-  }, [scroll]);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+  }, []);
 
   return (
-    <Container>
-      <Header />
-      <Cover />
-      <About />
-      <Technologies />
-      <Portfolio />
-      <Contact />
-      <Footer />
-    </Container>
+    <>
+      {loading ? (
+        <div class="loader">
+          <BeatLoader loading={loading} size={15} color="#d4d4d4" />
+        </div>
+      ) : (
+        <Container>
+          <Header />
+          <Cover />
+          <About />
+          <Technologies />
+          <Portfolio />
+          <Contact />
+          <Footer />
+        </Container>
+      )}
+    </>
   );
 };
 
