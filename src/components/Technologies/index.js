@@ -72,7 +72,7 @@ const Technologies = () => {
             showArrow={false}
           >
             {tecno.map((tecno, index) => (
-              <TechnoCard key={index}>
+              <TechnoCard key={index} hoverColor={tecno.hoverColor}>
                 {tecno.icon}
                 <p>{tecno.name}</p>
               </TechnoCard>

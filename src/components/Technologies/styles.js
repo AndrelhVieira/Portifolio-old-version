@@ -22,6 +22,11 @@ export const TechnoCard = styled.div`
   & p {
     font-size: 1.25rem;
   }
+
+  &:hover {
+    color: ${(props) => props.hoverColor};
+    transition-duration: 0.25s;
+  }
 `;
 
 export const DotButton = styled.button`
