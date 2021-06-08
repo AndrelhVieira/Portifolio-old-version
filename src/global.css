@@ -87,9 +87,10 @@ button {
   outline: none;
 }
 
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.cover {
+  background-image: url(assets/background-notebook.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
 }

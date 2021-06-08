@@ -7,9 +7,11 @@ import Contact from "../../components/Contact";
 import Footer from "../../components/Footer";
 
 import { useState, useEffect } from "react";
-import BeatLoader from "react-spinners/BeatLoader";
+import HashLoader from "react-spinners/HashLoader";
+import { motion } from "framer-motion";
 
-import { Container } from "./styles";
+import { Container, Loader } from "./styles";
+import Logo from "../../assets/alv-logo.png";
 
 const Homepage = () => {
   const [loading, setLoading] = useState(false);
@@ -22,23 +24,38 @@ const Homepage = () => {
   }, []);
 
   return (
-    <>
+    <section class="cover">
       {loading ? (
-        <div class="loader">
-          <BeatLoader loading={loading} size={15} color="#d4d4d4" />
-        </div>
+        <Loader>
+          <img src={Logo} />
+          <HashLoader
+            speedMultiplier={3}
+            loading={loading}
+            size={60}
+            color="#d4d4d4"
+          />
+        </Loader>
       ) : (
-        <Container>
-          <Header />
-          <Cover />
-          <About />
-          <Technologies />
-          <Portfolio />
-          <Contact />
-          <Footer />
-        </Container>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 2 }}
+        >
+          <Container>
+            <Header />
+            <Cover />
+            <motion.div layout>
+              <About />
+            </motion.div>
+            <Technologies />
+            <Portfolio />
+            <Contact />
+            <Footer />
+          </Container>
+        </motion.div>
       )}
-    </>
+    </section>
   );
 };
 
