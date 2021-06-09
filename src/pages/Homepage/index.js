@@ -45,9 +45,7 @@ const Homepage = () => {
           <Container>
             <Header />
             <Cover />
-            <motion.div layout>
-              <About />
-            </motion.div>
+            <About />
             <Technologies />
             <Portfolio />
             <Contact />

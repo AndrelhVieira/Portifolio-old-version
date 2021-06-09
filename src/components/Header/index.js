@@ -1,11 +1,13 @@
 import { SectionHeader, RangeHeader, ListMenu } from "./styles";
 
+import { i18n } from "../../translate/i18n";
+
 const Header = () => {
   const menu = [
-    { item: "Sobre", link: "sobre" },
-    { item: "Tecnologias", link: "tech" },
-    { item: "Portifólio", link: "folio" },
-    { item: "Contato", link: "contact" },
+    { item: i18n.t("header.menuItems.about"), link: "sobre" },
+    { item: i18n.t("header.menuItems.technologies"), link: "tech" },
+    { item: i18n.t("header.menuItems.portfolio"), link: "folio" },
+    { item: i18n.t("header.menuItems.contact"), link: "contact" },
   ];
 
   return (

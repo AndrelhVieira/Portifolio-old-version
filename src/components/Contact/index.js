@@ -3,15 +3,15 @@ import ButtonStyled from "../ButtonStyled";
 
 import { contact } from "../../providers/contact";
 
+import { i18n } from "../../translate/i18n";
+
 const Contact = () => {
   return (
     <>
       <span id="contact" />
       <Container>
-        <h1>Contato</h1>
-        <h3>
-          Vou deixar aqui alguns contatos e Github caso queira dar uma olhada.
-        </h3>
+        <h1>{i18n.t("contact.title")}</h1>
+        <h3>{i18n.t("contact.text")}</h3>
         <Email>
           <i class="fas fa-envelope"></i>andreluizhillerv@gmail.com
         </Email>
@@ -24,10 +24,10 @@ const Contact = () => {
             </div>
           ))}
         </IconsDiv>
-        <h1>Meu CV</h1>
+        <h1>Curriculum</h1>
         <CurriculumDiv>
-          <h3>Se tiver interesse, aqui está o meu Currículo:</h3>
-          <ButtonStyled isLight={false}>Acessar Curriculum</ButtonStyled>
+          <h3>{i18n.t("contact.cvText")}</h3>
+          <ButtonStyled isLight={false}>{i18n.t("contact.cvBtn")}</ButtonStyled>
         </CurriculumDiv>
       </Container>
     </>

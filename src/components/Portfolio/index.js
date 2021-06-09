@@ -7,6 +7,8 @@ import "react-multi-carousel/lib/styles.css";
 
 import { projects, games } from "../../providers/projects";
 
+import { i18n } from "../../translate/i18n";
+
 const Portfolio = () => {
   const responsive = {
     desktop: {
@@ -44,10 +46,10 @@ const Portfolio = () => {
     <>
       <span id="folio" />
       <Container>
-        <Title>Portifólio</Title>
-        <p>Aqui estão alguns projetos e jogos desenvolvidos por mim:</p>
+        <Title>{i18n.t("portfolio.title")}</Title>
+        <p>{i18n.t("portfolio.text")}</p>
 
-        <h2>Projetos</h2>
+        <h2>{i18n.t("portfolio.subtitleProjects")}</h2>
         <Carousel
           additionalTransfrom={0}
           arrows={false}
@@ -87,7 +89,7 @@ const Portfolio = () => {
           ))}
         </Carousel>
 
-        <h2>Jogos</h2>
+        <h2>{i18n.t("portfolio.subtitleGames")}</h2>
         <Carousel
           additionalTransfrom={0}
           autoPlay

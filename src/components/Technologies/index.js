@@ -6,6 +6,8 @@ import tecno from "../../providers/technologies";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
+import { i18n } from "../../translate/i18n";
+
 const Technologies = () => {
   const responsive = {
     desktop: {
@@ -41,10 +43,8 @@ const Technologies = () => {
     <>
       <span id="tech" />
       <Container>
-        <Title>Tecnologias</Title>
-        <p>
-          Estas são algumas das tecnologias e ferrametas com as quais trabalho.
-        </p>
+        <Title>{i18n.t("technologies.title")}</Title>
+        <p>{i18n.t("technologies.text")}</p>
         <ContainerCarousel>
           <Carousel
             additionalTransfrom={0}
