@@ -1,7 +1,11 @@
 import styled from "styled-components";
 
+import codeBackground from "../../assets/background-geral.png";
+
 export const Container = styled.section`
   background-color: #3a3335;
+  background-image: url(${codeBackground});
+  background-position: center;
 `;
 
 export const Loader = styled.div`
