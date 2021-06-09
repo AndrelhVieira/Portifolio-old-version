@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <>
       <GoToTop />
-      {/* <ChangeLanguageButton /> */}
       <Container>
         <img src={alv} />
         <h4>&copy; {i18n.t("footer.reserved")}</h4>

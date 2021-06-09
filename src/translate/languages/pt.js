@@ -5,7 +5,7 @@ const messages = {
         menuItems: {
           about: "Sobre",
           technologies: "Tecnologias",
-          portfolio: "Portifólio",
+          portfolio: "Portfólio",
           contact: "Contato",
         },
       },
@@ -21,7 +21,7 @@ const messages = {
         text: "Estas são algumas das tecnologias e ferramentas com as quais trabalho.",
       },
       portfolio: {
-        title: "Portifólio",
+        title: "Portfólio",
         text: "Aqui estão alguns projetos e jogos desenvolvidos por mim:",
         subtitleProjects: "Projetos",
         subtitleGames: "Jogos",
@@ -35,6 +35,7 @@ const messages = {
       footer: {
         reserved: "Todos os direitos reservados",
       },
+      translation: "English version",
     },
   },
 };

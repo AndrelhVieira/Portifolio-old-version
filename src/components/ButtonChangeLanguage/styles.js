@@ -1,25 +1,30 @@
 import styled from "styled-components";
 
 export const Button = styled.div`
+  & :link {
+    text-decoration: none;
+  }
+
   & .btn {
     border: none;
     outline: none;
     position: relative;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 277px;
-    height: 50px;
-    font-size: 1em;
+    height: 75px;
+    font-size: 1.25em;
     font-weight: bold;
-    line-height: 60px;
     text-align: center;
     text-transform: uppercase;
     background-color: transparent;
     cursor: pointer;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    font-size: 17px;
     color: ${({ isLight }) => (isLight ? "#d4d4d4" : "#3a3335")};
-    margin: 0 auto 25px;
+    margin: 15px auto 0;
+    padding: 15px 0 15px;
   }
 
   & .btn svg {
@@ -35,11 +40,17 @@ export const Button = styled.div`
     stroke-dashoffset: 0;
     -webkit-transition: all 600ms ease;
     transition: all 600ms ease;
+    height: 70px;
   }
 
   & .btn:hover svg rect {
     stroke-width: 4;
-    stroke-dasharray: 204, 543;
+    stroke-dasharray: 217, 543;
     stroke-dashoffset: 437;
+  }
+
+  & .imageLanguage {
+    height: 100%;
+    margin-right: 10px;
   }
 `;

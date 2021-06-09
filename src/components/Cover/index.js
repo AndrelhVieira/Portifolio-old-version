@@ -1,4 +1,5 @@
 import { StyledCover } from "./styles";
+import ChangeLanguageButton from "../ChangeLanguageButton";
 
 import alv from "../../assets/alv-logo.png";
 
@@ -16,6 +17,7 @@ const Cover = () => {
           <i class="fas fa-angle-double-down"></i>
         </a>
       </StyledCover>
+      <ChangeLanguageButton />
     </>
   );
 };

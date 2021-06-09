@@ -35,6 +35,7 @@ const messages = {
       footer: {
         reserved: "All rights reserved",
       },
+      translation: "Versão em PT-BR",
     },
   },
 };
