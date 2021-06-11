@@ -28,9 +28,15 @@ const messages = {
       },
       contact: {
         title: "Contact",
-        text: "I'll leave here some contacts and Github in case you want to take a look.",
+        text: "Feel free to leave your message or get in touch with me through my social networks.",
         cvText: "If you are interested, here is my resume:",
         cvBtn: "Access curriculum",
+      },
+      contactForm: {
+        name: "Name",
+        message: "Message",
+        send: "Send",
+        notify: "Message sent!",
       },
       footer: {
         reserved: "All rights reserved",

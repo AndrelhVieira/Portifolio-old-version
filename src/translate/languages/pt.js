@@ -28,9 +28,15 @@ const messages = {
       },
       contact: {
         title: "Contato",
-        text: "Vou deixar aqui alguns contatos e Github caso queira dar uma olhada.",
+        text: "Fique à vontade para deixar sua mensagem ou entrar em contato comigo através das minhas redes sociais.",
         cvText: "Se tiver interesse, aqui está o meu Currículo:",
         cvBtn: "Acessar curriculum",
+      },
+      contactForm: {
+        name: "Nome",
+        message: "Mensagem",
+        send: "Enviar",
+        notify: "Mensagem enviada!",
       },
       footer: {
         reserved: "Todos os direitos reservados",

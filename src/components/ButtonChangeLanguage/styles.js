@@ -31,6 +31,8 @@ export const Button = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    width: 277px;
+    height: 80px;
   }
 
   & .btn svg rect {

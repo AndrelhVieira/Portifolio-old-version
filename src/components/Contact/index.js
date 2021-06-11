@@ -1,5 +1,6 @@
-import { Container, IconsDiv, CurriculumDiv, Email } from "./styles";
+import { Container, IconsDiv, CurriculumDiv } from "./styles";
 import ButtonStyled from "../ButtonStyled";
+import ContactForm from "../ContactForm";
 
 import { contact } from "../../providers/contact";
 
@@ -12,9 +13,7 @@ const Contact = () => {
       <Container>
         <h1>{i18n.t("contact.title")}</h1>
         <h3>{i18n.t("contact.text")}</h3>
-        <Email>
-          <i class="fas fa-envelope"></i>andreluizhillerv@gmail.com
-        </Email>
+        <ContactForm />
         <IconsDiv>
           {contact.map((icon, index) => (
             <div>
