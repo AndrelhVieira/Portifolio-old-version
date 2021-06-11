@@ -11,7 +11,7 @@ const Cover = () => {
   return (
     <>
       <StyledCover>
-        <img src={alv} />
+        <img src={alv} alt="Logo ALV" />
         <h1>André Luiz Vieira</h1>
         <h3>{i18n.t("cover.coverDescription")}</h3>
 

@@ -27,7 +27,7 @@ const Homepage = () => {
     <section class="cover">
       {loading ? (
         <Loader>
-          <img src={Logo} />
+          <img src={Logo} alt="Logo ALV" />
           <HashLoader
             speedMultiplier={3}
             loading={loading}

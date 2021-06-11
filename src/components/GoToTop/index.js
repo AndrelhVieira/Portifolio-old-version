@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 
-import { BackToTop } from "./styles";
-
 import { useState } from "react";
 
 const GoToTop = () => {

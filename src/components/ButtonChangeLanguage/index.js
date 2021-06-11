@@ -13,6 +13,7 @@ const ButtonChangeLanguage = ({ isLight, change_language, children }) => {
         <img
           src={language === "en" ? portugueseImg : englishImg}
           class="imageLanguage"
+          alt="Imagem de bandeira do Brasil ou dos Estados Unidos"
         />
         <svg>
           <rect

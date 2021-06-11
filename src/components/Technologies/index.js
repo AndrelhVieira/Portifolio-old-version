@@ -27,8 +27,7 @@ const Technologies = () => {
     },
   };
 
-  const CustomDot = ({ onClick, active, index, carouselState }) => {
-    const { currentSlide } = carouselState;
+  const CustomDot = ({ onClick, active }) => {
     return (
       <li>
         <DotButton

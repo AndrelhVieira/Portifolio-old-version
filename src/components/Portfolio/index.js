@@ -28,8 +28,7 @@ const Portfolio = () => {
     },
   };
 
-  const CustomDot = ({ onClick, active, index, carouselState }) => {
-    const { currentSlide } = carouselState;
+  const CustomDot = ({ onClick, active }) => {
     return (
       <li>
         <DotButton
@@ -78,13 +77,13 @@ const Portfolio = () => {
           {projects.map((project, index) => (
             <Project key={index}>
               <h3>{project.name}</h3>
-              <a href={project.github} target="_blank">
+              <a href={project.github} target="_blank" rel="noreferrer">
                 <i class="fab fa-github"></i>
               </a>
-              <a href={project.link} target="_blank">
+              <a href={project.link} target="_blank" rel="noreferrer">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-              <img src={project.image} />
+              <img src={project.image} alt="Imagem de algum projeto" />
             </Project>
           ))}
         </Carousel>
@@ -117,13 +116,13 @@ const Portfolio = () => {
           {games.map((game, index) => (
             <Project key={index}>
               <h3>{game.name}</h3>
-              <a href={game.github} target="_blank">
+              <a href={game.github} target="_blank" rel="noreferrer">
                 <i class="fab fa-github"></i>
               </a>
-              <a href={game.link} target="_blank">
+              <a href={game.link} target="_blank" rel="noreferrer">
                 <i class="fas fa-external-link-alt"></i>
               </a>
-              <img src={game.image} />
+              <img src={game.image} alt="Imagem de algum jogo" />
             </Project>
           ))}
         </Carousel>

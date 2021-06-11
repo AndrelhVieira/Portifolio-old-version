@@ -15,7 +15,7 @@ const ChangeLanguageButton = () => {
   const change_language = () => {
     if (language === "pt" || language === "pt-BR") {
       handleSelectChange("en");
-    } else if (language == "en") {
+    } else if (language === "en") {
       handleSelectChange("pt");
     }
   };

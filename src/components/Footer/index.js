@@ -10,7 +10,7 @@ const Footer = () => {
     <>
       <GoToTop />
       <Container>
-        <img src={alv} />
+        <img src={alv} alt="Logo ALV" />
         <h4>&copy; {i18n.t("footer.reserved")}</h4>
       </Container>
     </>

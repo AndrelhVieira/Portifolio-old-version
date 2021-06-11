@@ -6,6 +6,7 @@ const ButtonStyled = ({ isLight, children }) => {
       <a
         href="https://drive.google.com/file/d/1nRq-1oZKyNPjkoHhHu-CSpPBYLjts-JH/view?usp=sharing"
         target="_blank"
+        rel="noreferrer"
       >
         <button class="btn">
           <svg>

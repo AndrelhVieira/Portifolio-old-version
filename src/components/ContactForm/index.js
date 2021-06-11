@@ -11,19 +11,17 @@ import { notify } from "react-notify-toast";
 import { i18n } from "../../translate/i18n";
 
 const schema = yup.object().shape({
-  name: yup.string().required(),
+  name: yup.string().required("O"),
   email: yup.string().email().required(),
   message: yup.string().required(),
 });
 
 const ContactForm = () => {
-  const { register, handleSubmit, errors } = useForm({
+  const { register, handleSubmit } = useForm({
     resolver: yupResolver(schema),
   });
 
   const handleData = (data) => {
-    console.log(data);
-
     emailjs
       .sendForm(
         "service_andreluizv",
@@ -46,8 +44,8 @@ const ContactForm = () => {
       <Form onSubmit={handleSubmit(handleData)} id="contactFormId">
         <Input
           name="name"
-          {...register("name")}
           placeholder={i18n.t("contactForm.name")}
+          {...register("name")}
           autoComplete="off"
         />
         <Input

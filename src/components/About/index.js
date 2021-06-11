@@ -13,7 +13,7 @@ const About = () => {
         <Title>{i18n.t("about.title")}</Title>
         <div>
           <TextAboutMe>{i18n.t("about.text")}</TextAboutMe>
-          <img src={perfil} />
+          <img src={perfil} alt="Foto de perfil de André Luiz Vieira" />
         </div>
       </Container>
     </>
