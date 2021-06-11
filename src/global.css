@@ -76,6 +76,7 @@ body {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   position: relative;
+  cursor: pointer;
 }
 
 button {

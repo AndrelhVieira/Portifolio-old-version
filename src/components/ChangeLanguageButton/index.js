@@ -9,7 +9,7 @@ const ChangeLanguageButton = () => {
   const [language] = useState(localStorage.getItem(I18N_STORAGE_KEY));
   const handleSelectChange = (language) => {
     localStorage.setItem(I18N_STORAGE_KEY, language);
-    window.location = window.location;
+    window.location.reload();
   };
 
   const change_language = () => {

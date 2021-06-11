@@ -17,7 +17,7 @@ const Contact = () => {
         <IconsDiv>
           {contact.map((icon, index) => (
             <div>
-              <a href={icon.link} key={index} target="_blank">
+              <a href={icon.link} key={index} target="_blank" rel="noreferrer">
                 {icon.icon}
               </a>
             </div>

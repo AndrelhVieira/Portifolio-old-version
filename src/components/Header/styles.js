@@ -34,6 +34,7 @@ export const RangeHeader = styled.div`
       margin: 0 5px;
       border-bottom: 5px solid transparent;
       transition: 0.5s;
+      cursor: pointer;
 
       &:hover {
         border-bottom: 5px solid #d4d4d4;

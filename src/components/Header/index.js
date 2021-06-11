@@ -1,6 +1,8 @@
-import { SectionHeader, RangeHeader, ListMenu } from "./styles";
+import { RangeHeader } from "./styles";
 
 import { i18n } from "../../translate/i18n";
+
+import { Link } from "react-scroll";
 
 const Header = () => {
   const menu = [
@@ -15,9 +17,15 @@ const Header = () => {
       <RangeHeader>
         <ul>
           {menu.map((item, index) => (
-            <a href={`#${item.link}`} key={index}>
+            <Link
+              activeClass="active"
+              to={`${item.link}`}
+              key={index}
+              smooth={true}
+              duration={500}
+            >
               <li>{item.item}</li>
-            </a>
+            </Link>
           ))}
         </ul>
       </RangeHeader>

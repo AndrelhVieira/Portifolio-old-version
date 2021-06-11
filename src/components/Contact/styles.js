@@ -36,6 +36,10 @@ export const IconsDiv = styled.div`
     @media screen and (min-width: 525px) {
       font-size: 4rem;
     }
+
+    &:hover {
+      transition-duration: 0.25s;
+    }
   }
 `;
 

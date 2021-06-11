@@ -14,7 +14,7 @@ const messages = {
       },
       about: {
         title: "About",
-        text: "Helo! How are you? My name is André Luiz, I'm 18 years old and I'm a Full-stack developer and passionate about technology and all the amazing things it gives us! I love what I do and I am focused on becoming a great developer. My biggest dream is to be able to help people with the help of technology.",
+        text: "Hi! How are you? My name is André Luiz, I'm 18 years old and I'm a Full-stack developer and passionate about technology and all the amazing things it gives us! I love what I do and I am focused on becoming a great developer. My biggest dream is to be able to help people with the help of technology.",
       },
       technologies: {
         title: "Technologies",
