@@ -15,9 +15,14 @@ const tecno = [
     hoverColor: "#F6E039",
   },
   {
-    name: `React Js`,
+    name: "React Js",
     icon: <i class="devicon-react-original"></i>,
     hoverColor: "#61DBFB",
+  },
+  {
+    name: "Typescript",
+    icon: <i class="devicon-typescript-plain"></i>,
+    hoverColor: "#007ACC",
   },
   {
     name: "Redux",
@@ -25,9 +30,24 @@ const tecno = [
     hoverColor: "#7752BD",
   },
   {
+    name: "GIT",
+    icon: <i class="devicon-git-plain"></i>,
+    hoverColor: "#F1502F",
+  },
+  {
+    name: "PHP",
+    icon: <i class="devicon-php-plain"></i>,
+    hoverColor: "#474A8A",
+  },
+  {
     name: "Python",
     icon: <i class="devicon-python-plain"></i>,
     hoverColor: "#306998",
+  },
+  {
+    name: "Django",
+    icon: <i class="devicon-django-plain"></i>,
+    hoverColor: "#163F2E",
   },
   {
     name: "Flask",
@@ -35,9 +55,19 @@ const tecno = [
     hoverColor: "#000000",
   },
   {
-    name: "GIT",
-    icon: <i class="devicon-git-plain"></i>,
-    hoverColor: "#F1502F",
+    name: "PostgreSQL",
+    icon: <i class="devicon-postgresql-plain"></i>,
+    hoverColor: "#336791",
+  },
+  {
+    name: "MySQL",
+    icon: <i class="devicon-mysql-plain"></i>,
+    hoverColor: "#1C758F",
+  },
+  {
+    name: "Oracle",
+    icon: <i class="devicon-oracle-original"></i>,
+    hoverColor: "#E54021",
   },
 ];
 

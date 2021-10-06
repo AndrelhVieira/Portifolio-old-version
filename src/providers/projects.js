@@ -29,13 +29,13 @@ export const projects = [
   {
     name: "26ª IEQ de Curitiba",
     image: ieqvaledosol,
-    link: "http://www.ieqvaledosol.com.br/",
+    link: "https://www.ieqvaledosol.com.br/",
     github: "https://github.com/AndrelhVieira/IEQ_ValeDoSol",
   },
   {
     name: "USS Informática",
     image: uss,
-    link: "http://www.ussinformatica.com.br/",
+    link: "https://www.ussinformatica.com.br/",
     github: "https://github.com/AndrelhVieira/USS_Informatica",
   },
 ];
