@@ -4,7 +4,7 @@ const ButtonStyled = ({ isLight, children }) => {
   return (
     <Button isLight={isLight}>
       <a
-        href="https://drive.google.com/file/d/1bhSMp_XWIsY9ahfYlwoRwbwju5NbmLg_/view?usp=sharing"
+        href="https://drive.google.com/file/d/1UXju6kkkF2V6gmUiAHQml3JwZDI50jhU/view?usp=sharing"
         target="_blank"
         rel="noreferrer"
       >
