@@ -27,6 +27,9 @@ const Header = () => {
               <li>{item.item}</li>
             </Link>
           ))}
+          <a href="/curriculum">
+            <li>{i18n.t("header.menuItems.cv")}</li>
+          </a>
         </ul>
       </RangeHeader>
     </>

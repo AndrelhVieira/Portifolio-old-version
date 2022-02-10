@@ -7,10 +7,11 @@ const messages = {
           technologies: "Technologies",
           portfolio: "Portfolio",
           contact: "Contact",
+          cv: "Curriculum",
         },
       },
       cover: {
-        coverDescription: "Full Stack developer",
+        coverDescription: "Front End developer",
       },
       about: {
         title: "About",
@@ -42,6 +43,52 @@ const messages = {
         reserved: "All rights reserved",
       },
       translation: "Versão em PT-BR",
+      curriculum: {
+        nacionality: "Brazilian",
+        titles: {
+          resume: "Personal Summary",
+          mainCompetences: "Main Competencies",
+          courses: "Courses",
+          professional: "Professional History",
+          contact: "Contact",
+        },
+        textResume:
+          "The love for technology was passed on to me from an early age. The passion for programming came with experiences in high school, because I'm fascinated by how it can change people's lives. I dream of being able to impact people, places and be an agent of change through technology and the projects I participate in.",
+        competences: {
+          rest: "RESTful concepts",
+          englishLevel: "English at CEFR level A2",
+        },
+        courses: {
+          kenzie: "Web Fullstack Development",
+          positivo: "Information Systems",
+          dates: {
+            kenzie: "October 2020 - October 2021",
+            positivo: "January 2020 - July 2020 (Locked)",
+          },
+        },
+        professional: {
+          office: {
+            kenzie: "Peer Coach of programming",
+            mannesoft: "Trainee programmer",
+            db1: "React Junior Developer",
+          },
+          dates: {
+            kenzie: "January 2021 - July 2021",
+            mannesoft: "August 2021 - October 2021",
+            db1: "December 2021 - Now",
+          },
+          resume: {
+            kenzie:
+              "Reviewing codes and helping students solve problems with HTML5, CSS3, Javascript(ES6), ReactJS, Redux, GIT and others.",
+            mannesoft:
+              "Mainly learning company technologies like PHP and Oracle to use them in management, bidding and education tools.",
+            db1: "Dealing with application development using React Native, ReactJS and Angular technologies. Working on more than one project related to banking applications. In this opportunity, I learned React Native and Angular.",
+          },
+        },
+        contact:
+          "Get in touch through my social media or keep checking my portfolio!",
+        portfolio: "Go to Portfolio",
+      },
     },
   },
 };

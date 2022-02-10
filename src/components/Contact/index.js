@@ -1,12 +1,18 @@
-import { Container, IconsDiv, CurriculumDiv } from "./styles";
-import ButtonStyled from "../ButtonStyled";
+import { Container, IconsDiv, CurriculumDiv, Button } from "./styles";
 import ContactForm from "../ContactForm";
 
 import { contact } from "../../providers/contact";
 
 import { i18n } from "../../translate/i18n";
+import { useHistory } from "react-router-dom";
 
 const Contact = () => {
+  const history = useHistory();
+
+  const goToCurriculum = () => {
+    history.push("/curriculum");
+  };
+
   return (
     <>
       <span id="contact" />
@@ -26,7 +32,22 @@ const Contact = () => {
         <h1>Curriculum</h1>
         <CurriculumDiv>
           <h3>{i18n.t("contact.cvText")}</h3>
-          <ButtonStyled isLight={false}>{i18n.t("contact.cvBtn")}</ButtonStyled>
+          <Button>
+            <button class="btn" onClick={goToCurriculum}>
+              <svg>
+                <rect
+                  x="5"
+                  y="5"
+                  rx="20"
+                  fill="none"
+                  stroke="url(#grad1)"
+                  width="266"
+                  height="50"
+                ></rect>
+              </svg>
+              <span>{i18n.t("contact.cvBtn")}</span>
+            </button>
+          </Button>
         </CurriculumDiv>
       </Container>
     </>
