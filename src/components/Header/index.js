@@ -27,7 +27,7 @@ const Header = () => {
               <li>{item.item}</li>
             </Link>
           ))}
-          <a href="/curriculum">
+          <a href="https://andreluizv.dev.br/curriculum">
             <li>{i18n.t("header.menuItems.cv")}</li>
           </a>
         </ul>
