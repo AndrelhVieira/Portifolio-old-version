@@ -46,3 +46,15 @@ export const RangeHeader = styled.div`
     }
   }
 `;
+
+export const ItemCV = styled.li`
+  margin: 0 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+  border-bottom: 5px solid transparent;
+
+  &:hover {
+    border-bottom: 5px solid #d4d4d4;
+  }
+`;

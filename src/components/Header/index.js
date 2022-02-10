@@ -1,16 +1,23 @@
-import { RangeHeader } from "./styles";
+import { RangeHeader, ItemCV } from "./styles";
 
 import { i18n } from "../../translate/i18n";
 
 import { Link } from "react-scroll";
+import { useHistory } from "react-router-dom";
 
 const Header = () => {
+  const history = useHistory();
+
   const menu = [
     { item: i18n.t("header.menuItems.about"), link: "sobre" },
     { item: i18n.t("header.menuItems.technologies"), link: "tech" },
     { item: i18n.t("header.menuItems.portfolio"), link: "folio" },
     { item: i18n.t("header.menuItems.contact"), link: "contact" },
   ];
+
+  const goToCurriculum = () => {
+    history.push("/curriculum");
+  };
 
   return (
     <>
@@ -27,9 +34,9 @@ const Header = () => {
               <li>{item.item}</li>
             </Link>
           ))}
-          <a href="https://andreluizv.dev.br/curriculum">
-            <li>{i18n.t("header.menuItems.cv")}</li>
-          </a>
+          <ItemCV onClick={goToCurriculum}>
+            {i18n.t("header.menuItems.cv")}
+          </ItemCV>
         </ul>
       </RangeHeader>
     </>
