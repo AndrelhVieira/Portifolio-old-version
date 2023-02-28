@@ -15,7 +15,7 @@ const messages = {
       },
       about: {
         title: "Sobre",
-        text: "Olá! Tudo bem? Me chamo André Luiz, tenho 19 anos e sou desenvolvedor Full-stack e apaixonado pela tecnologia e todas as coisas incríveis que ela nos proporciona! Amo o que faço e tenho foco para me tornar um ótimo desenvolvedor. Meu maior sonho é poder ajudar pessoas com o auxílio da tecnologia.",
+        text: "Olá! Tudo bem? Me chamo André Luiz, sou desenvolvedor Full-stack e apaixonado pela tecnologia e todas as coisas incríveis que ela nos proporciona! Amo o que faço e tenho foco para me tornar um ótimo desenvolvedor. Meu maior sonho é poder ajudar pessoas com o auxílio da tecnologia.",
       },
       technologies: {
         title: "Tecnologias",
@@ -50,20 +50,24 @@ const messages = {
           mainCompetences: "Principais Competências",
           courses: "Cursos",
           professional: "Histórico Profissional",
+          certificates: "Certificados",
           contact: "Contato",
         },
         textResume:
           "O amor pela tecnologia foi passado para mim desde cedo. A paixão por programação veio com experiências no colégio, pois fico fascinado em como ela pode mudar a vida das pessoas. Sonho em poder impactar pessoas, lugares e ser agente de mudança através da tecnologia e dos projetos aos quais participo.",
         competences: {
           rest: "Conceitos de RESTful",
-          englishLevel: "Inglês no nível A2 do CEFR",
+          englishLevel: "Inglês no nível B2 do CEFR",
         },
         courses: {
           kenzie: "Desenvolvimento Web Fullstack",
-          positivo: "Sistemas de Informação",
+          puc: "Análise e desenvolvimento de sistemas",
+          rocketseat: "Programa Ignite React Native",
           dates: {
             kenzie: "Outubro 2020 - Outubro 2021",
-            positivo: "Janeiro 2020 - Julho 2020 (Trancado)",
+            puc: "Outubro 2022 - Julho 2025 (Previsto)",
+            rocketseat:
+              "Concluído em 17 de Outubro, 2022, com estimadas 100 horas",
           },
         },
         professional: {
@@ -84,6 +88,9 @@ const messages = {
               "Principalmente aprendendo as tecnologias da empresa como PHP e Oracle para utilizá-las em ferramentas de gerenciamento, licitação e educação.",
             db1: "Lidando com desenvolvimento de aplicativos utilizando as tecnologias React Native, ReactJS e Angular. Atuando em mais de um projeto relacionado à aplicativos bancários. Nesta oportunidade, aprendi React Native e Angular.",
           },
+        },
+        certificates: {
+          text: "Clique nas imagens para acessá-las",
         },
         contact:
           "Entre em contato através das minhas redes sociais ou siga conferindo meu portfolio!",

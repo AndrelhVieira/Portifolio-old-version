@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Project } from "../../components/Portfolio/styles";
 
 export const Container = styled.section`
   text-align: center;
@@ -201,6 +202,20 @@ export const ProfessionalDate = styled.p`
 
 export const ProfessionalDescription = styled.p`
   text-align: justify;
+`;
+
+export const Certificates = styled.section`
+  padding: 0 25px 25px;
+
+  p {
+    margin-bottom: 25px;
+  }
+`;
+
+export const CertificateCarouselItem = styled(Project)`
+  a {
+    margin: 0;
+  }
 `;
 
 export const Contact = styled.section`

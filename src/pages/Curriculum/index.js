@@ -28,6 +28,8 @@ import {
   FooterImage,
   IconsDiv,
   Contact,
+  Certificates,
+  CertificateCarouselItem,
 } from "./styles";
 
 import { i18n } from "../../translate/i18n";
@@ -35,6 +37,7 @@ import { i18n } from "../../translate/i18n";
 import ChangeLanguageButton from "../../components/ChangeLanguageButton";
 
 import {
+  certificates,
   competences,
   courses,
   infos,
@@ -53,6 +56,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { motion } from "framer-motion";
 import { Loader } from "../Homepage/styles";
 import Logo from "../../assets/alv-logo.png";
+import Carousel from "react-multi-carousel";
 
 const Curriculum = () => {
   const history = useHistory();
@@ -60,6 +64,24 @@ const Curriculum = () => {
 
   const backToPortfolio = () => {
     history.push("/");
+  };
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1, // optional, default to 1.
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1, // optional, default to 1.
+    },
   };
 
   useEffect(() => {
@@ -145,6 +167,49 @@ const Curriculum = () => {
                 ))}
               </ProfessionalContent>
             </Professional>
+            <Certificates>
+              <Title>{i18n.t("curriculum.titles.certificates")}</Title>
+
+              <p>{i18n.t("curriculum.certificates.text")}</p>
+
+              <Carousel
+                additionalTransfrom={0}
+                arrows={true}
+                autoPlay={false}
+                autoPlaySpeed={3000}
+                centerMode={false}
+                className=""
+                containerClass="container"
+                dotListClass=""
+                draggable
+                responsive={responsive}
+                focusOnSelect={false}
+                infinite
+                itemClass=""
+                keyBoardControl
+                minimumTouchDrag={80}
+                renderButtonGroupOutside={false}
+                renderDotsOutside={false}
+                sliderClass=""
+                slidesToSlide={1}
+                swipeable
+                showArrow={false}
+              >
+                {certificates.map((certificate, index) => (
+                  <CertificateCarouselItem
+                    key={index}
+                    style={{ margin: "0 5px", cursor: "pointer" }}
+                  >
+                    <a href={certificate.link} target="_blank" rel="noreferrer">
+                      <img
+                        src={certificate.image}
+                        alt="Imagem de algum certificado"
+                      />
+                    </a>
+                  </CertificateCarouselItem>
+                ))}
+              </Carousel>
+            </Certificates>
             <Contact>
               <Title>{i18n.t("curriculum.titles.contact")}</Title>
               <p>{i18n.t("curriculum.contact")}</p>
